@@ -1,0 +1,226 @@
+body{
+    background:linear-gradient(#e7cec9, #f0ddd0, #f0d0ca)
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid white; */
+    height: 150vh;
+}
+
+.box{
+    background-color: transparent;
+    border-radius: 10px;
+}
+
+
+.box1{
+    display: grid;
+    grid-area: box1;
+    transition: all 1s ease;
+    animation: box1animation 1s ease-in 0s 1 alternate;
+
+}
+
+.box1:hover{
+    scale: 1.1;
+    border: 1px transparent;
+    z-index: 10;
+    box-shadow: -1px 1px 20px 10px white;
+} 
+
+.box2{
+    display: grid;
+    grid-area: box2;
+    transition: all 1s ease;
+    text-align: center;
+    animation: box2ani 1s ease-in 0s 1 alternate ;
+}
+.h1{
+    position: relative;
+    text-align: center;
+    font-weight: 200;
+    font-size: xxx-large;
+    background: rgba(81, 78, 78, 0.3);
+    padding: 6px 40px;
+    border-radius: 8px;
+    backdrop-filter: blur(6px);
+    font-family: "Bitcount Prop Double Ink", system-ui;   
+}
+.set{
+    position: relative;
+    top: -190px;
+}
+.box2:hover{
+    scale: 1.1;
+    border: 1px transparent;
+    z-index: 10;
+    box-shadow: -1px 1px 20px 10px white;    
+}
+
+.box3{
+    display: grid;
+    grid-area: box3;
+    transition: all 1s ease;
+    animation: box3ani 1s ease-in 0s 1 alternate;
+}
+.box3:hover{
+    scale: 1.1;
+    border: 1px transparent;
+    z-index: 10;
+    box-shadow: -1px 1px 20px 10px white;     
+}
+.box4{
+    display: grid;
+    grid-area: box4;
+    transition: all 1s ease;
+    animation: box1animation 1s ease-in 0s 1 alternate;
+}
+.pa{
+    position: relative;
+    top: -180px;
+    color: rgb(248, 209, 209);
+    background: rgba(81, 78, 78, 0.3);
+    padding: 8px 16px;
+    border-radius: 8px;
+    backdrop-filter: blur(6px);
+    font-family: "Bitcount Prop Double Ink", system-ui;
+}
+.box4:hover{
+    scale: 1.1;
+    border: 1px transparent;
+    z-index: 10;
+    box-shadow: -1px 1px 20px 10px white;  
+}
+
+.box5{
+    display: grid;
+    grid-area: box5;
+    transition: all 1s ease;
+    animation: box1animation 1s ease-in 0s 1 alternate;
+}
+.visit{
+    position: relative;
+    top: -130px;
+    color: white;
+}
+.h1-2{
+    z-index: 20;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box5:hover{
+    scale: 1.1;
+    border: 1px transparent;
+    z-index: 10;
+    box-shadow: -1px 1px 20px 10px white;  
+}
+
+.box6{
+    display: grid;
+    grid-area: box6;
+    transition: all 1s ease;
+    animation: box6ani 1s ease-in 0s 1 alternate;
+}
+.box6:hover{
+    scale: 1.1;
+    border: 1px transparent;
+    z-index: 10;
+    box-shadow: -1px 1px 20px 10px white;     
+}
+.box7{
+    display: grid;
+    grid-area: box7;
+    transition: all 1s ease;
+    animation: box6ani 1s ease-in 0s 1 alternate;
+}
+.more{
+    color: white;
+    position: relative;
+    top: -130px;
+}
+.box7:hover{
+    scale: 1.1;
+    border: 1px transparent;
+    z-index: 10;
+    box-shadow: -1px 1px 20px 10px white;  
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+    color: rgb(233, 177, 105);
+    transition: all 0.5s ease;
+}
+
+@keyframes box1animation{
+    from{
+        transform: translateX(-100vh);
+        scale: 0.5;
+        opacity: 0.5;
+    }
+    to{
+        transform: translateX(0vh);
+        scale: 1;
+        opacity: 1;
+    }
+}
+
+@keyframes box2ani{
+    from{
+        transform: translateY(-50vw);
+        scale: 0.5;
+        opacity: 0.5;
+    }
+    to{
+        transform: translateY(0vw);
+        scale: 1;
+        opacity: 1;
+    }
+}
+
+@keyframes box3ani{
+    from{
+        transform: translateX(110vh);
+        scale: 0.5;
+        opacity: 0.5;
+    }
+    to{
+        transform: translateY(0);
+        scale: 1;
+        opacity: 1;
+    }
+}
+
+@keyframes box6ani{
+    from{
+        transform: translateY(-100vw);
+        opacity: 0.5;
+        scale: 0.5;
+    }
+    to{
+        transform: translateY(0);
+        scale: 1;
+        opacity: 1;
+    }
+}
+
+.container{
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 200px 200px 200px 200px 200px;
+    grid-template-rows: 200px 200px 200px 200px;
+    grid-template-areas: "box1 box2 box2 box3 box3"
+                          "box4 box4 box4 box3 box3"
+                           "box5 box6 box6 box3 box3"
+                           "box7 box6 box6 box3 box3";
+}
+
+.img1{
+    border-radius: 10px;
+}
